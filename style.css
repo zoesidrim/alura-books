@@ -1,0 +1,27 @@
+@import url("../styles/header.css");
+@import url("../styles/banner.css");
+@import url("../styles/carrossel.css");
+@import url("../styles/topicos.css");
+@import url("../styles/novidades.css");
+@import url("../styles/footer.css");
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --cor-destaque: #EB9B00;
+    --cor-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --cor-azul: #002F52;
+    --preto: #000000;
+    --cor-footer: #F9F9F9;
+    --cor-footer-titulo: #858585;
+    --cor-footer-texto: #474646;
+    --fonte-principal: "Poppins", sans-serif;
+    --fonte-secundaria: "Josefin Sans", sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
