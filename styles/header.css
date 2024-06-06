@@ -122,22 +122,36 @@
         color: var(--preto);
     }
 
+    .opcoes__item-link:hover {
+        color: var(--cor-destaque);
+    }
+
     .opcoes__item-categorias {
         padding: 1em 2em;
     }
     
+    .opcoes__botao {
+        display: none;
+    }
+
     .opcoes__botao:checked ~ .lista-menu {
         display: block;
         width: 20%;
     } 
 
-    .opcoes__botao {
-        display: none;
-    }
-
+    
     .opcoes__botao:checked ~ .opcoes__label> .opcoes__item-categorias{
         background: var(--cor-degrade);
-        color: var(--branco);
+        color: var(--cor-destaque);
+    }
+
+    .lista-menu__item:hover {
+        background: var(--cor-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link {
+        -webkit-text-fill-color: var(--cor-destaque);
+        text-decoration: none;
     }
 }
 
@@ -163,8 +177,9 @@
 
     .opcoes {
         margin-right: auto;
-        padding-left: 2em;
+        padding-left: 1em;
     }
+
 
     .opcoes__botao:checked ~ .lista-menu {
         width: 12%;
