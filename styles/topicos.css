@@ -24,7 +24,7 @@
     padding: 0.7em;
 }
 
-.topicos__item a {
+.topicos__item-link {
     font-size: 0.9rem;
     text-decoration: none;
     color: var(--branco);
@@ -45,10 +45,18 @@
         padding: 2em;
     }
 
-    .topicos__item a {
+    .topicos__item-link {
         font-size: 1.5rem;
     }
 
+    .topicos__item:hover {
+        background: var(--cor-degrade);
+    }
+    
+    .topicos__item:hover > .topicos__item-link {
+        color: var(--cor-destaque);
+    } 
+    
 }
 
 @media screen and (min-width: 1728px){
