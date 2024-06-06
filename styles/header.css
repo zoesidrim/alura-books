@@ -111,7 +111,7 @@
     }
 
     .opcoes__item {
-        padding: 0 1em;
+        padding: 1em 2em;
         align-items: center;
         color: var(--preto);
     }
@@ -123,16 +123,21 @@
     }
 
     .opcoes__item-categorias {
-        padding-right: 1em;
+        padding: 1em 2em;
     }
     
     .opcoes__botao:checked ~ .lista-menu {
         display: block;
-        width: auto;
+        width: 20%;
     } 
 
     .opcoes__botao {
         display: none;
+    }
+
+    .opcoes__botao:checked ~ .opcoes__label> .opcoes__item-categorias{
+        background: var(--cor-degrade);
+        color: var(--branco);
     }
 }
 
@@ -160,5 +165,9 @@
         margin-right: auto;
         padding-left: 2em;
     }
+
+    .opcoes__botao:checked ~ .lista-menu {
+        width: 12%;
+    } 
 
 }
